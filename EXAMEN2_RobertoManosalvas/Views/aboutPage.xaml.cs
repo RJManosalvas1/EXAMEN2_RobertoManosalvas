@@ -2,8 +2,14 @@ namespace EXAMEN2_RobertoManosalvas.Views;
 
 public partial class aboutPage : ContentPage
 {
-	public aboutPage()
-	{
-		InitializeComponent();
-	}
+    public aboutPage()
+    {
+        InitializeComponent();
+    }
+
+    private void InitializeComponent()
+    {
+        throw new NotImplementedException();
+    }
+
 }

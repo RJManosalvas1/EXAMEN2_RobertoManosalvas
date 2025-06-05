@@ -1,16 +1,12 @@
 namespace EXAMEN2_RobertoManosalvas.Views;
 
-public partial class HomePage : ContentPage
+public partial class mainPage : ContentPage
 {
-    public HomePage()
+    public mainPage()
     {
         InitializeComponent();
     }
 
-    private void InitializeComponent()
-    {
-        throw new NotImplementedException();
-    }
 
     private async void aboutPage(object sender, EventArgs e)
     {

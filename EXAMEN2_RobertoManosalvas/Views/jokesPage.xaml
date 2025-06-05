@@ -2,11 +2,41 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EXAMEN2_RobertoManosalvas.Views.jokesPage"
-             Title="jokesPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="Chistes">
+
+    <AbsoluteLayout>
+
+        <VerticalStackLayout AbsoluteLayout.LayoutBounds="0.5,0.5,0.9,0.8"
+                             AbsoluteLayout.LayoutFlags="All"
+                             Spacing="25"
+                             VerticalOptions="Center"
+                             HorizontalOptions="Center">
+
+            <Image Source="emoji.jpg"
+                   WidthRequest="100"
+                   HeightRequest="100"
+                   HorizontalOptions="Center" />
+
+            <Label x:Name="SetupLabel"
+                   FontSize="20"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="Center" />
+
+            <Label x:Name="PunchlineLabel"
+                   FontSize="18"
+                   TextColor="Pink"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+
+        <Button Text="Otro chiste"
+                AbsoluteLayout.LayoutBounds="0.5,1,0.5,100"
+                AbsoluteLayout.LayoutFlags="WidthProportional,PositionProportional"
+                BackgroundColor="DodgerBlue"
+                TextColor="White"
+                Clicked="OnAnotherJokeButton" />
+
+    </AbsoluteLayout>
 </ContentPage>

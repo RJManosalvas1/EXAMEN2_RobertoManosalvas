@@ -6,10 +6,4 @@ public partial class aboutPage : ContentPage
     {
         InitializeComponent();
     }
-
-    private void InitializeComponent()
-    {
-        throw new NotImplementedException();
-    }
-
 }

@@ -1,20 +1,23 @@
-namespace EXAMEN2_RobertoManosalvas.Views;
+using System;
+using Microsoft.Maui.Controls;
 
-public partial class mainPage : ContentPage
+namespace EXAMEN2_RobertoManosalvas.Views
 {
-    public mainPage()
+    public partial class mainPage : ContentPage
     {
-        InitializeComponent();
-    }
+        public mainPage()
+        {
+            InitializeComponent();
+        }
 
+        private async void OnAboutPageButton(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new aboutPage());
+        }
 
-    private async void aboutPage(object sender, EventArgs e)
-    {
-        await Navigation.PushAsync(new aboutPage());
-    }
-
-    private async void jokesPage(object sender, EventArgs e)
-    {
-        await Navigation.PushAsync(new jokesPage());
+        private async void OnJokesPageButton(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new jokesPage());
+        }
     }
 }
